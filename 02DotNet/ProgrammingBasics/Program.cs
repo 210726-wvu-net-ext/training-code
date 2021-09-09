@@ -31,7 +31,8 @@ namespace ProgrammingBasics
 
             #region Arrays
             //Arrays.SingleDimensional();
-            Arrays.ReverseString("Hello");
+            //Arrays.ReverseString("Hello");
+            Arrays.MultiDimensional();
             #endregion
         }
         static void Input(){

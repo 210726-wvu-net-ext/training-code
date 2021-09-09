@@ -24,8 +24,20 @@ namespace ProgrammingBasics
         }
         // 2-D array - write program to iterate a 2 -D
         internal static void MultiDimensional(){
-            int[,] matrix=new int[2,3];  
-            matrix[0,0]=10;
+            int[,] matrix=new int[2,3]{ { 1, 2, 3 }, { 4, 5, 6 } };  
+            //matrix[0,0]=10;
+            int i;
+            int j;
+            for (i = 0; i < 2; i++)
+            {
+                for (j = 0; j < 3; j++)
+                {
+                    Console.WriteLine("matrix[{0},{1}] = {2}", i, j, matrix[i,j]);
+                }
+                Console.WriteLine();
+            }
+
+            
         }
         internal static void JaggedArray(){
             int[][] ja = new int[3][];//intialize row only
@@ -40,8 +52,9 @@ namespace ProgrammingBasics
                 {
                     Console.Write($"{ja[i][j]} ");
                 }
-                Console.WriteLine();
+                
             }
+            Console.ReadKey();
 
         }
         // How to reverse a string? input - Hello , output - olleh
